@@ -63,7 +63,7 @@ canonifyURLs = true
 [params.intro]
   header    = "О женском счастье"
 
-  paragraph = "Твои мысли. Твои чувства. Твое вдохновение"
+  paragraph = "Твои мысли. <br> Твои чувства. <br> Твое вдохновение"
 
   about     = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tellus lacus, auctor vehicula molestie quis, tempor quis velit. Quisque in quam ac leo efficitur vulputate. Phasellus ullamcorper aliquam sodales. Maecenas sit amet condimentum ipsum. Proin sit amet ligula elit. Mauris."
 
