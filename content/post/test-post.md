@@ -5,6 +5,7 @@ categories:
   - личностный рост
 tags:
   - семья
+  - кризис
 ---
 ![](/images/uploads/desktop-background-3061483_1920.jpg)
 
