@@ -1,6 +1,10 @@
 ---
 title: Неидеальный перфекционизм
 date: '2018-03-25T15:09:34+03:00'
+categories:
+  - личностный рост
+tags:
+  - семья
 ---
 ![](/images/uploads/desktop-background-3061483_1920.jpg)
 
