@@ -60,15 +60,6 @@ canonifyURLs = true
   customCSS            = ["default"]
   customJS             = ["default"]
 
-  # options for highlight.js (version, additional languages, and theme)
-  disable_highlight = true # set to true to disable Highlight
-  highlightjsVersion = "9.11.0"
-  highlightjsCDN = "//cdn.bootcss.com"
-  highlightjsLang = ["r", "yaml", "css"]
-  highlightjsTheme = "github"
-  MathJaxCDN = "//cdn.bootcss.com"
-  MathJaxVersion = "2.7.1"
-
 [params.intro]
   header    = "О женском счастье"
 
@@ -81,7 +72,7 @@ canonifyURLs = true
   [params.intro.pic]
     src       = "/images/uploads/logo_hourglass.jpg"
     # Sets Image to be a cirlce
-    circle    = false
+    circle    = true
     # Sets Image to be Future Imperfect's hexagon
     imperfect = true
     width     = ""
