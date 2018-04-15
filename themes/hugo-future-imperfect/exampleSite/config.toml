@@ -1,11 +1,11 @@
 baseurl = "/"
-languageCode = "ru"
-title = "Одиночество - сука | О женском счастье"
+languageCode = "en-us"
+title = "Hugo Future Imperfect"
 theme = "hugo-future-imperfect"
 preserveTaxonomyNames = true
-paginate = 7
-disqusShortname = "polosanebes"
-googleAnalytics = "UA-116734704-1"
+paginate = 3
+disqusShortname = "shortname"
+googleAnalytics = ""
 pluralizeListTitles = false
 # Set the followings to true as part of your site SEO
 enableRobotsTXT = true
@@ -15,9 +15,9 @@ canonifyURLs = true
   # Sets the meta tag description
   description          = "HTML5 UP theme, Future Imperfect with some extra goodies, ported by Julio Pescador. Powered by Hugo"
   # Sets the navbarTitle that appears in the top left of the navigation bar
-  navbarTitle          = "Одиночество - сука"
+  navbarTitle          = "Future Imperfect"
   # Sets where "View More Posts" links
-  viewMorePostLink     = "/post/"
+  viewMorePostLink     = "/blog/"
 
 # Optional Params
   # Sets navbarTitle to match the section of the website
@@ -44,12 +44,12 @@ canonifyURLs = true
   socialShare          = true
   # Sets specific share to appear on posts (default behavior is to appear)
   socialShareTwitter   = true
-  socialShareGoogleplus = false
+  socialShareGoogleplus = true
   socialShareFacebook  = true
-  socialShareReddit    = false
-  socialShareLinkedin  = false
-  socialShareStumbleupon = false
-  socialSharePinterest = false
+  socialShareReddit    = true
+  socialShareLinkedin  = true
+  socialShareStumbleupon = true
+  socialSharePinterest = true
   socialShareEmail     = true
 
   # Load custom CSS or JavaScript files. The variable is an array so that you
@@ -61,7 +61,7 @@ canonifyURLs = true
   customJS             = ["default"]
 
   # options for highlight.js (version, additional languages, and theme)
-  disable_highlight = true # set to true to disable Highlight
+  disable_highlight = false # set to true to disable Highlight
   highlightjsVersion = "9.11.0"
   highlightjsCDN = "//cdn.bootcss.com"
   highlightjsLang = ["r", "yaml", "css"]
@@ -69,10 +69,27 @@ canonifyURLs = true
   MathJaxCDN = "//cdn.bootcss.com"
   MathJaxVersion = "2.7.1"
 
-[params.intro]
-  header    = "О женском счастье"
+# Disqus will take priority over Staticman (github.com/eduardoboucas/staticman)
+# due to its ease of use. Feel free to check out both and decide what you would
+# prefer to use. See Staticman.yml for additional settings.
+[params.staticman]
+  # Sets Statiman to be active
+  staticman = false
+  # Sets the location for Staticman to connect to
+  username  = ""
+  repo      = ""
+  branch    = ""
 
-  paragraph = "Посмотреть в телескоп на солнце можно только два раза."
+  [params.staticman.recaptcha]
+    sitekey = "SITE_KEY"
+    secret  = "ENCRYPTED_SECRET"
+
+  # These are optional params related to the sidebar. They are recommended, but not
+  # required for proper functionality. HTML is supported within the params.
+[params.intro]
+  header    = "Hugo Future Imperfect"
+
+  paragraph = "Another fine responsive site template by <a href=\"http://html5up.net\">HTML5 UP</a>. Ported by Julio Pescador with some extra goodies <i class='fa fa-hand-peace-o'></i>"
 
   about     = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tellus lacus, auctor vehicula molestie quis, tempor quis velit. Quisque in quam ac leo efficitur vulputate. Phasellus ullamcorper aliquam sodales. Maecenas sit amet condimentum ipsum. Proin sit amet ligula elit. Mauris."
 
@@ -93,11 +110,10 @@ canonifyURLs = true
 
 # Sets the menu items in the navigation bar
 # Identifier prepends a Font Awesome icon to the menu item
-
 [[menu.main]]
-  name = "Блог"
-  url = "/post/"
-  identifier = "fa fa-newspaper-o"
+  name = "Home"
+  url = "/"
+  identifier = "fa fa-home"
   weight = 1
 
 [[menu.main]]
@@ -107,23 +123,35 @@ canonifyURLs = true
   weight = 2
 
 [[menu.main]]
-  name = "Категории"
+  name = "Blog"
+  url = "/blog/"
+  identifier = "fa fa-newspaper-o"
+  weight = 3
+
+[[menu.main]]
+  name = "Itemized"
+  url = "/itemized/"
+  identifier = "fa fa-list"
+  weight = 4
+
+[[menu.main]]
+  name = "Categories"
   url = "/categories/"
   identifier = "fa fa-sitemap"
   weight = 5
 
-#[[menu.main]]
-#  name = "Contact"
-#  url = "/contact/"
-#  identifier = "fa fa-envelope-o"
-#  weight = 6
+[[menu.main]]
+  name = "Contact"
+  url = "/contact/"
+  identifier = "fa fa-envelope-o"
+  weight = 6
 
 # Sets Social Media icons to appear and link to your account. Value should be your
 # username unless otherwise noted. These are the icons affected by socialAppearAtTop
 # and socialAppearAtBottom.
 [social]
   # Coding Communities
-  github           = ""
+  github           = "jpescador/hugo-future-imperfect"
   gitlab           = ""
   stackoverflow    = "" # User Number
   bitbucket        = ""
@@ -131,22 +159,22 @@ canonifyURLs = true
   codepen          = ""
   # Visual Art Communities
   deviantart       = ""
-  flickr           = ""
+  flickr           = "example"
   behance          = ""
   dribbble         = ""
   # Publishing Communities
   wordpress        = ""
   medium           = ""
   # Professional/Business Oriented Communities
-  linkedin         = ""
-  linkedin_company = ""
+  linkedin         = "example"
+  linkedin_company = "examplebusiness"
   foursquare       = ""
   xing             = ""
   slideshare       = ""
   # Social Networks
-  facebook         = ""
+  facebook         = "example"
   googleplus       = ""
-  reddit           = ""
+  reddit           = "example"
   quora            = ""
   youtube          = ""
   vimeo            = ""
@@ -154,20 +182,16 @@ canonifyURLs = true
     # WeChat and QQ need testing.
     wechat         = ""
     qq             = "" # User ID Number
-  instagram        = ""
+  instagram        = "example"
   tumblr           = ""
-  twitter          = ""
+  twitter          = "example"
   skype            = ""
   snapchat         = ""
-  pinterest        = ""
-  telegram         = ""
+  pinterest        = "example"
+  telegram         = "example"
   vine             = ""
   googlescholar    = ""
   orcid            = ""
-  researchgate     = ""
+  researchgate     = "example"
   # Email
   email            = "example"
-
-
-[permalinks]
-  post = "/:slug/"

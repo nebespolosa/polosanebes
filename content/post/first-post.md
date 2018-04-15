@@ -1,8 +1,8 @@
 ---
 layout: blog
 title: Хочешь семью – повзрослей.
-date: '2018-04-15T15:15:08+03:00'
-thumbnail: /images/uploads/love-3187623_1920.jpg
+date: '2018-04-15T17:15:08+03:00'
+featured: /images/uploads/love-3187623_1920.jpg
 ---
 ![Счастливая пара](/images/uploads/love-3187623_1920.jpg)
 
