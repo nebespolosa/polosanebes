@@ -3,7 +3,7 @@ layout: blog
 title: Хочешь семью – повзрослей.
 date: '2018-04-15T17:15:08+03:00'
 featured: /images/uploads/love-3187623_1920.jpg
-tags: ''
+tags: ['семья']
 ---
 ![Счастливая пара](/images/uploads/love-3187623_1920.jpg)
 
