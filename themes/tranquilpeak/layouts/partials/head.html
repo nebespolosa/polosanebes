@@ -91,6 +91,10 @@
     <!--STYLES-->
     <link rel="stylesheet" href="/css/style-jsjn0006wyhpyzivf6yceb31gvpjatbcs3qzjvlumobfnugccvobqwxnnaj8.min.css" />
     <!--STYLES END-->
+
+    <!--NETLIFY CMS-->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
     {{ range .Site.Params.customCSS }}
       {{ if isset . "href" }}
         <link {{ if not (isset . "rel") }}rel="stylesheet" {{ end }}{{ range $key, $value := . }} {{ if eq $key "href" }}{{ (printf "%s=\"%s\"" $key ($value | absURL)) | safeHTMLAttr }}{{ else }}{{ (printf "%s=\"%s\"" $key (string $value)) | safeHTMLAttr }}{{ end }}{{ end }}>
