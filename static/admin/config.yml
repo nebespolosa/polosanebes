@@ -18,5 +18,5 @@ collections:
       - {label: "Дата публикации", name: "date", widget: "datetime"}
       - {label: "Картинка", name: "featured", widget: "image", required: false}
       - {label: "Категории", name: "categories", widget: "list"}
-      - {label: "Теги", name: "tags", widget: "list"}
+      - {label: "Теги", name: "tags", widget: "list", default: ["новость"]}
       - {label: "Текст", name: "body", widget: "markdown"}
