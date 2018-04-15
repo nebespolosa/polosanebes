@@ -18,6 +18,6 @@ collections:
       - {label: "Название", name: "title", widget: "string"}
       - {label: "Дата публикации", name: "date", widget: "datetime"}
       - {label: "Картинка", name: "featured", widget: "image", required: false}
-      - {label: "Категории", name: "categories", widget: "list", required: false}
-      - {label: "Теги", name: "tags", widget: "list", required: false}
+      - {label: "Категории", name: "categories", widget: "list", required: true}
+      - {label: "Теги", name: "tags", widget: "list", required: true}
       - {label: "Текст", name: "body", widget: "markdown"}
