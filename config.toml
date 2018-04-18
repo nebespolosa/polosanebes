@@ -1,6 +1,6 @@
 baseurl = "/"
 languageCode = "ru"
-title = "Одиночество - сука | О женском счастье"
+title = "Never Alone"
 theme = "hugo-future-imperfect"
 preserveTaxonomyNames = true
 paginate = 7
@@ -15,7 +15,7 @@ canonifyURLs = true
   # Sets the meta tag description
   description          = "HTML5 UP theme, Future Imperfect with some extra goodies, ported by Julio Pescador. Powered by Hugo"
   # Sets the navbarTitle that appears in the top left of the navigation bar
-  navbarTitle          = "Одиночество - сука"
+  navbarTitle          = "Never Alone"
   # Sets where "View More Posts" links
   viewMorePostLink     = "/post/"
 
